@@ -25,6 +25,7 @@ $(() => {
     //VALID EMAIL
     } else if (validateEmail(email)) {
       $.ajax({
+        url:'login.php'
         data: dataString,
         type:'POST',
         success: function(result) {
